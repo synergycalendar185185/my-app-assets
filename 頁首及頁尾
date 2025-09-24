@@ -26,10 +26,8 @@
       --heading-font: "Nunito", sans-serif;
       --nav-font: "Varela Round", sans-serif;
       --theme-color: #FF7575;
-      --theme-gradient: linear-gradient(45deg, #FF7575, #e06363);
       --background-color: #f8f9fa;
       --default-color: #3d4348;
-      --heading-color: #3e5055;
       --nav-color: #313336;
       --nav-hover-color: #e06363; 
     }
@@ -54,53 +52,77 @@
       height: 60px;
       width: auto;
     }
-    .navbar-nav .nav-link {
-      font-family: var(--nav-font);
-      font-weight: 500;
-      color: var(--nav-color);
-      padding: 0.5rem 1rem;
-      font-size: 16px;
-      transition: all 0.2s ease-in-out;
-    }
     .navbar-toggler {
       border: none;
       font-size: 1.5rem;
     }
     .navbar-toggler:focus { box-shadow: none; }
     
-    /* 頁首中間選單按鈕樣式 */
-    .navbar-nav.mx-auto .nav-link {
-        border: 1px solid #e0e0e0;
-        border-radius: 6px;
-        margin: 0 0.4rem;
+    /* 通用導覽連結樣式 */
+    .navbar-nav .nav-link {
+      font-family: var(--nav-font);
+      font-weight: 500;
+      color: var(--nav-color);
+      padding: 1rem;
+      font-size: 16px;
+      transition: color 0.3s ease;
+      position: relative;
     }
-    .navbar-nav.mx-auto .nav-link:hover,
-    .navbar-nav.mx-auto .nav-link.show {
-        color: var(--theme-color);
-        border-color: var(--theme-color);
-        box-shadow: 0 0 0 0.2rem rgba(255, 117, 117, 0.25);
+    .navbar-nav .nav-link:hover {
+      color: var(--nav-hover-color);
     }
 
-    /* 「首頁」等右側連結樣式 */
+    /* 中間選單的頂部線條效果 */
+    .navbar-nav.mx-auto .nav-link {
+        margin: 0 0.2rem;
+    }
+    .navbar-nav.mx-auto .nav-link::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: var(--theme-color);
+        transform: scaleX(0); /* 預設隱藏 */
+        transform-origin: center;
+        transition: transform 0.3s ease;
+    }
+    /* 當懸停或下拉選單展開時，顯示頂部線條 */
+    .navbar-nav.mx-auto .nav-link:hover::before,
+    .navbar-nav.mx-auto .nav-link.show::before {
+        transform: scaleX(1);
+    }
+    /* 當懸停或下拉選單展開時，改變文字顏色 */
+    .navbar-nav.mx-auto .nav-link:hover,
+    .navbar-nav.mx-auto .nav-link.show {
+        color: var(--nav-hover-color);
+    }
+
+    /* 右側「首頁」連結啟用狀態 */
     .navbar-nav .nav-link.active {
         color: var(--theme-color);
         font-weight: 700;
     }
-    .navbar-nav .nav-link:hover {
-        color: var(--nav-hover-color);
-    }
 
     /* 下拉選單樣式 */
     .dropdown-menu {
-      border-radius: 10px; border: none; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      margin-top: 0.75rem !important; animation: fadeIn 0.2s ease-out; padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #eee;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      margin-top: 0.25rem !important;
+      animation: fadeIn 0.2s ease-out;
+      padding: 0.5rem;
     }
     .dropdown-item {
-      padding: 0.6rem 1rem; border-radius: 6px; font-weight: 500;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 500;
       transition: background-color 0.2s ease, color 0.2s ease;
     }
     .dropdown-item:hover {
-      background-color: #ffeeee; color: var(--nav-hover-color);
+      background-color: #ffeeee;
+      color: var(--nav-hover-color);
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
@@ -133,34 +155,48 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">協記工具</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">協記工具</a></li><li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item disabled" href="#">保留項目 1</a></li><li><a class="dropdown-item disabled" href="#">保留項目 2</a></li>
+                <li><a class="dropdown-item" href="#">協記工具</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item disabled" href="#">保留項目 1</a></li>
+                <li><a class="dropdown-item disabled" href="#">保留項目 2</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">帳務規劃工具</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">租金扣繳及二代健保</a></li><li><a class="dropdown-item" href="#">執行業務所得計算</a></li>
-                <li><a class="dropdown-item" href="#">營業稅及發票開立金額</a></li><li><a class="dropdown-item" href="#">員工酬勞計算</a></li>
-                <li><a class="dropdown-item" href="#">勞務報酬單</a></li><li><a class="dropdown-item" href="#">國外出差旅費報告表</a></li>
-                <li><a class="dropdown-item" href="#">書審申報計算</a></li><li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item disabled" href="#">保留項目 1</a></li><li><a class="dropdown-item disabled" href="#">保留項目 2</a></li>
+                <li><a class="dropdown-item" href="#">租金扣繳及二代健保</a></li>
+                <li><a class="dropdown-item" href="#">執行業務所得計算</a></li>
+                <li><a class="dropdown-item" href="#">營業稅及發票開立金額</a></li>
+                <li><a class="dropdown-item" href="#">員工酬勞計算</a></li>
+                <li><a class="dropdown-item" href="#">勞務報酬單</a></li>
+                <li><a class="dropdown-item" href="#">國外出差旅費報告表</a></li>
+                <li><a class="dropdown-item" href="#">書審申報計算</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item disabled" href="#">保留項目 1</a></li>
+                <li><a class="dropdown-item disabled" href="#">保留項目 2</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">限額計算工具</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">交際費限額計算</a></li><li><a class="dropdown-item" href="#">職工福利限額計算</a></li>
-                <li><a class="dropdown-item" href="#">捐贈限額計算</a></li><li><a class="dropdown-item" href="#">折舊超限計算</a></li><li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item disabled" href="#">保留項目 1</a></li><li><a class="dropdown-item disabled" href="#">保留項目 2</a></li>
+                <li><a class="dropdown-item" href="#">交際費限額計算</a></li>
+                <li><a class="dropdown-item" href="#">職工福利限額計算</a></li>
+                <li><a class="dropdown-item" href="#">捐贈限額計算</a></li>
+                <li><a class="dropdown-item" href="#">折舊超限計算</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item disabled" href="#">保留項目 1</a></li>
+                <li><a class="dropdown-item disabled" href="#">保留項目 2</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">股權投資工具</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">股權規劃</a></li><li><a class="dropdown-item" href="#">企業價值計算工具</a></li>
-                <li><a class="dropdown-item" href="#">投資公司與個人持股稅負試算</a></li><li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item disabled" href="#">保留項目 1</a></li><li><a class="dropdown-item disabled" href="#">保留項目 2</a></li>
+                <li><a class="dropdown-item" href="#">股權規劃</a></li>
+                <li><a class="dropdown-item" href="#">企業價值計算工具</a></li>
+                <li><a class="dropdown-item" href="#">投資公司與個人持股稅負試算</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item disabled" href="#">保留項目 1</a></li>
+                <li><a class="dropdown-item disabled" href="#">保留項目 2</a></li>
               </ul>
             </li>
           </ul>
