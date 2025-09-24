@@ -140,7 +140,7 @@
     <div class="container-fluid container-xl">
       <nav class="navbar navbar-expand-lg">
         <!-- Logo -->
-        <a href="#" class="navbar-brand me-auto">
+        <a href="https://script.google.com/macros/s/AKfycbyTDYgIbJhddQE825tQgbca62QofqXLllVI18fc6TP36Jq7JRt7SbTK7SB9u9xciNDX/exec" class="navbar-brand me-auto">
           <img src="https://cdn.jsdelivr.net/gh/synergycalendar185185/my-app-assets/合併-1.PNG" alt="協記 Logo" class="logo-img">
         </a>
         
@@ -153,8 +153,7 @@
           <!-- 置中選單 -->
           <ul class="navbar-nav mx-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">協記工具</a>
-              <ul class="dropdown-menu">
+              <a href="https://script.google.com/macros/s/AKfycbxyGgyMrSKEieK6p3EB1l7RqEYWRXiIh9jxJ1T8qoEJu_nAAEO5q-mtVc2rEGxbddXIxw/exec" target="_blank" rel="noopener noreferrer">開始使用 &rarr;</a>               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">協記工具</a></li>
 
               </ul>
@@ -195,7 +194,7 @@
           
           <!-- 右側連結 -->
           <ul class="navbar-nav d-none d-lg-flex">
-            <li class="nav-item"><a class="nav-link active" href="#">首頁</a></li>
+            <li class="nav-item"><a class="nav-link active" href="https://script.google.com/macros/s/AKfycbyTDYgIbJhddQE825tQgbca62QofqXLllVI18fc6TP36Jq7JRt7SbTK7SB9u9xciNDX/exec">首頁</a></li>
             <li class="nav-item"><a class="nav-link" href="https://www.synergycpas.com.tw/" target="_blank">協記官網</a></li>
           </ul>
         </div>
