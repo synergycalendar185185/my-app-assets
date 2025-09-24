@@ -165,7 +165,7 @@
             <li><a class="dropdown-item" href="#">營業稅及發票開立金額</a></li>
             <li><a class="dropdown-item" href="#">員工酬勞計算</a></li>
             <li><a class="dropdown-item" href="#">勞務報酬單</a></li>
-            <li><a class="dropdown-item" href="#">國外出差旅費報告表</a></li>
+            <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbzsdvrruiAbzz0hKahGMXAqua-VcnjWvE3htZhIxfaC0xICrBJngcEcrOk2CMSOpXoWow/exec" target="_blank" rel="noopener noreferrer">國外出差旅費報告表</a></li>
             <li><a class="dropdown-item" href="#">書審申報計算</a></li>
         </ul>
     </li>
