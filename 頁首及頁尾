@@ -160,7 +160,7 @@
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">帳務規劃工具</a>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">租金扣繳及二代健保</a></li>
+            <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbzOBBqMv14ZfTadCfCujN9lCikjPHGCH3dDqAJ15aZEHzmnuf3HULjQjxIX6SEaRKdV7g/exec" target="_blank" rel="noopener noreferrer">租金扣繳及二代健保</a></li>
             <li><a class="dropdown-item" href="#">執行業務所得計算</a></li>
             <li><a class="dropdown-item" href="#">營業稅及發票開立金額</a></li>
             <li><a class="dropdown-item" href="#">員工酬勞計算</a></li>
