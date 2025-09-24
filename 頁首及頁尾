@@ -156,9 +156,7 @@
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">協記工具</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">協記工具</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item disabled" href="#">保留項目 1</a></li>
-                <li><a class="dropdown-item disabled" href="#">保留項目 2</a></li>
+
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -171,9 +169,7 @@
                 <li><a class="dropdown-item" href="#">勞務報酬單</a></li>
                 <li><a class="dropdown-item" href="#">國外出差旅費報告表</a></li>
                 <li><a class="dropdown-item" href="#">書審申報計算</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item disabled" href="#">保留項目 1</a></li>
-                <li><a class="dropdown-item disabled" href="#">保留項目 2</a></li>
+
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -183,9 +179,7 @@
                 <li><a class="dropdown-item" href="#">職工福利限額計算</a></li>
                 <li><a class="dropdown-item" href="#">捐贈限額計算</a></li>
                 <li><a class="dropdown-item" href="#">折舊超限計算</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item disabled" href="#">保留項目 1</a></li>
-                <li><a class="dropdown-item disabled" href="#">保留項目 2</a></li>
+
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -194,9 +188,7 @@
                 <li><a class="dropdown-item" href="#">股權規劃</a></li>
                 <li><a class="dropdown-item" href="#">企業價值計算工具</a></li>
                 <li><a class="dropdown-item" href="#">投資公司與個人持股稅負試算</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item disabled" href="#">保留項目 1</a></li>
-                <li><a class="dropdown-item disabled" href="#">保留項目 2</a></li>
+
               </ul>
             </li>
           </ul>
