@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>儲存圖片功能範例</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 步驟 1: 引入 html2canvas 函式庫 -->
+    <!-- 這是實現擷取功能的核心，必須要載入 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- 簡單的 CSS 樣式，讓範例更好看 -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #capture-area {
+            padding: 20px;
+            border: 2px solid #007bff;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #007bff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .controls {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+        #saveImageBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #saveImageBtn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 步驟 2: 定義要被擷取成圖片的 HTML 內容區塊 -->
+    <!-- 只有這個 div 裡面的內容會出現在最終的圖片中 -->
+    <main id="capture-area">
+        <h1>這是圖片的標題</h1>
+        <p>這裡是將會被儲存到圖片中的段落文字。您可以放入任何 HTML 元素，例如表格、列表、甚至是其他圖片。</p>
+        <ul>
+            <li>項目一</li>
+            <li>項目二</li>
+            <li>項目三</li>
+        </ul>
+        <p><strong>注意：</strong>下方的控制按鈕不會出現在圖片中。</p>
+    </main>
+
+    <!-- 步驟 3: 控制按鈕與其他不需擷取的內容 -->
+    <!-- 我們將按鈕放在一個 div 中，並給這個 div 加上 "no-print" class -->
+    <!-- 這樣在擷取時，整個區塊都會被隱藏 -->
+    <div class="controls no-print">
+        <p>這裡是控制區域，不會被擷取。</p>
+        <button id="saveImageBtn">儲存為圖片 (.png)</button>
+    </div>
+
+
+    <!-- 步驟 4: 實現功能的 JavaScript 程式碼 -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // 找到儲存圖片的按鈕
+        const saveImageBtn = document.getElementById('saveImageBtn');
+
+        // 為按鈕加上點擊事件
+        saveImageBtn.addEventListener('click', () => {
+            // 找到所有不希望出現在圖片中的元素 (class="no-print")
+            const elementsToHide = document.querySelectorAll('.no-print');
+            
+            // 1. 執行擷取前，先將這些元素隱藏
+            elementsToHide.forEach(el => el.style.visibility = 'hidden');
+            
+            // 2. 呼叫 html2canvas 函式，並指定要擷取的區塊
+            //    - 第一個參數是目標元素 (document.getElementById('capture-area'))
+            //    - 第二個參數是設定物件，例如 scale: 2 可以提高圖片解析度
+            html2canvas(document.getElementById('capture-area'), { scale: 2, useCORS: true })
+                .then(canvas => {
+                    // 3. 擷取成功後，執行這段程式碼
+                    
+                    // 建立一個 <a> 標籤 (隱形的下載連結)
+                    const link = document.createElement('a');
+                    
+                    // 將 canvas 轉換成 PNG 格式的圖片資料 (base64)
+                    link.href = canvas.toDataURL('image/png');
+                    
+                    // 設定下載的檔案名稱
+                    link.download = '擷取的畫面.png';
+                    
+                    // 模擬點擊這個連結來觸發下載
+                    link.click();
+                    
+                    // 4. 下載觸發後，將隱藏的元素重新顯示出來
+                    elementsToHide.forEach(el => el.style.visibility = 'visible');
+                })
+                .catch(err => {
+                    // 如果發生錯誤，也要確保將隱藏的元素重新顯示
+                    console.error('儲存圖片失敗:', err);
+                    elementsToHide.forEach(el => el.style.visibility = 'visible');
+                });
+        });
+    });
+    </script>
+
+</body>
+</html>
