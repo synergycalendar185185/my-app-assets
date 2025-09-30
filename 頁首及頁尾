@@ -163,27 +163,27 @@
             <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbzOBBqMv14ZfTadCfCujN9lCikjPHGCH3dDqAJ15aZEHzmnuf3HULjQjxIX6SEaRKdV7g/exec" target="_blank" rel="noopener noreferrer">租金扣繳及二代健保</a></li>
             <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbyZh6DtXLYWrDtMVDqpTF655PgBN7ZIkwmp62yAjs41QRA5q2dWmDVQRmrueTxpwyx4Yg/exec"  target="_blank" rel="noopener noreferrer">執行業務所得計算</a></li>
             <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbxykccfxaBs9sm1n2nt9lc-GKAEsWhzIbtQ3k8fW6FRgD3B74grza1IgftLI-77PnSz/exec"  target="_blank" rel="noopener noreferrer">營業稅及發票開立金額</a></li>
-            <li><a class="dropdown-item" href="#">員工酬勞計算</a></li>
+            <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbx9b2mxzgTVPOwil_hYyeUzKBbS96FL_IJBhD8W1gjFBIBRk1IPm9x46dgCZcMeAQJh/exec">員工酬勞計算</a></li>
             <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbwi8dQSdLqdCDnL9F0-xGRoIf7_wGVLN-nzEaW2ELgsJWIZgvG4vZpnDmHUdqCDevf1nQ/exec"  target="_blank" rel="noopener noreferrer">勞務報酬單</a></li>
             <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbzsdvrruiAbzz0hKahGMXAqua-VcnjWvE3htZhIxfaC0xICrBJngcEcrOk2CMSOpXoWow/exec" target="_blank" rel="noopener noreferrer">國外出差旅費報告表</a></li>
-            <li><a class="dropdown-item" href="#">書審申報計算</a></li>
+            <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbxVoRxFyulI9VPb-jup3nvzVijAB5gYGDgx52MKPafVZXFfl5J04dO-b94eIKFtN2Ok/exec">書審申報計算</a></li>
         </ul>
     </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">限額計算工具</a>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">交際費限額計算</a></li>
-            <li><a class="dropdown-item" href="#">職工福利限額計算</a></li>
-            <li><a class="dropdown-item" href="#">捐贈限額計算</a></li>
-            <li><a class="dropdown-item" href="#">折舊超限計算</a></li>
+            <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbwcSK5gAOhDOXiDdhSRZ2EaOUm24KDWJymo0BaZNp3UIvK1guhcadwenY_DVWKM_gS4jQ/exec">交際費限額計算</a></li>
+            <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbypzgAskEIPldSV43LdTwGi1cmtOPBW9obovEpCHN4jehevKHIumvahZ1Ghb-S0Mqpe/exec">職工福利限額計算</a></li>
+            <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbyhWy0tJkMjF7BDg7GxlF12kvWRLMDWWgnQOH_LBPJxdZwBpm5GeEEj9JdHHLtY3MG2aw/exec">捐贈限額計算</a></li>
+            <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbwTlPZAtNJASQ_-1y3s28DT3OO1AYDom7vq83FAANRy19lEdr4-IHp4dx3SSOGwMUNJ3w/exec">折舊超限計算</a></li>
         </ul>
     </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">股權投資工具</a>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">股權規劃</a></li>
-            <li><a class="dropdown-item" href="#">企業價值計算工具</a></li>
-            <li><a class="dropdown-item" href="#">投資公司與個人持股稅負試算</a></li>
+            <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbzcenxzM8XBR732wMBQIx039eXsRv2m2Y2XG9cSSYOO-v9WiWfDhcDnurvnDoEaezVAow/exec">股權規劃</a></li>
+            <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbz5mZc4e0l5pBrQkMZCBnh_mF8C_C_14F8PeSmSq-Pn5HhezX9UybeaIizwC0jgisbz/exec">企業價值計算工具</a></li>
+            <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbxGUl2FvJnSuYAWlbTMWJmpDoTCtCE9FmLQ6u2aO5heSApyRVDIcITgYahIM4Fxro6a/exec">投資公司與個人持股稅負試算</a></li>
         </ul>
     </li>
 </ul>
