@@ -182,7 +182,7 @@
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">股權投資工具</a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbzcenxzM8XBR732wMBQIx039eXsRv2m2Y2XG9cSSYOO-v9WiWfDhcDnurvnDoEaezVAow/exec" target="_blank" rel="noopener noreferrer">股權規劃</a></li>
-            <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbz5mZc4e0l5pBrQkMZCBnh_mF8C_C_14F8PeSmSq-Pn5HhezX9UybeaIizwC0jgisbz/exec" target="_blank" rel="noopener noreferrer">企業價值計算工具</a></li>
+            <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbz5mZc4e0l5pBrQkMZCBnh_mF8C_C_14F8PeSmSq-Pn5HhezX9UybeaIizwC0jgisbz/exec" target="_blank" rel="noopener noreferrer">現金流量折現法計算價值</a></li>
             <li><a class="dropdown-item" href="https://script.google.com/macros/s/AKfycbxGUl2FvJnSuYAWlbTMWJmpDoTCtCE9FmLQ6u2aO5heSApyRVDIcITgYahIM4Fxro6a/exec" target="_blank" rel="noopener noreferrer">投資公司與個人持股稅負試算</a></li>
         </ul>
     </li>
